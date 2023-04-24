@@ -1,0 +1,61 @@
+.customer_comments {
+    position: relative;
+    margin-top: 251px;
+    .container {
+        .bg_dots{
+            position: absolute;
+            left: 100px;
+            top: 230px;
+            z-index: -20;
+        }
+        .main_div{
+            width: 1120px;
+            height: 425px;
+            background: linear-gradient(#67C3F3,#5A98F2);
+            border-radius: 24px;
+            padding-top: 69px;
+           .content{
+                @include flex(center);
+                flex-direction: column;
+                h2{
+                   color: white;
+                   font-family: $mulish_font;
+                }
+                .border_div{
+                    @include borderDiv;
+                    margin-top: 25px;
+                    background-color: white;
+                }
+           }
+           .messages{
+            display: flex;
+            justify-content: space-between;
+              .images_div {
+                display: flex;
+                margin-top: 100px;
+                .names{
+                    margin-left: 29px;
+                   @include flex(center);
+                   flex-direction: column;
+                   color: white;
+                   font-family: $mulish_font;
+                }
+              }
+              .paragraph{
+                width: 420px;
+                p{
+                    color: white;
+                    font-family: $mulish_font;
+                    margin-top: 100px;
+                    font-size: 19px;
+                    line-height: 30px;
+                }
+              }
+           }
+           .container_2{
+            width: 884px;
+            margin: auto;
+           }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+header {
+padding-top: 70px;
+// padding-bottom: 70px;
+    div.container {
+        display: flex;
+    
+        @include flex(space-between);
+        nav{
+            height: 100%;
+            // background-color: blue;
+            ul{
+                height: 100%;
+                list-style: none;
+                display: flex;
+                li{
+                    height: 100%;
+                    margin-left: 40px;
+                    a.active {
+                        color: #1F1534;
+                        font-weight: 700;
+                        font-size: 18px;
+                        opacity: 100%;
+                    }
+                    a{
+                        height: 100%;
+                        display: inline-block;
+                        text-decoration: none;
+                        font-size: 18px;
+                        line-height: 22.59px;
+                        color: $grey-color;
+                        opacity: 50%;
+                        font-weight: 400;
+                        font-family: $mulish_font;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.latest_articles {
+    position: relative;
+    .container{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        .bg_image{
+            position: absolute;
+            left: 115px;
+            top: 100px;
+        }
+        .bg_image2{
+            position: absolute;
+            right: 0;
+            z-index: -100;
+        }
+        .bg_image3{
+            position: absolute;
+            right: 10px;
+            top: 900px;
+        }
+        .content{
+            h2{
+                color: black;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 56px;
+                font-family: $mulish_font;
+            }
+            .border_div{
+                @include borderDiv;
+                margin-left: 200px;
+            }
+        }
+        .slide_div{
+            margin-top: 65px;
+            width: 1120px;
+            display: flex;
+            justify-content: space-between;
+            div{
+                height: 512px;
+                width: 350px;
+                background-color: white;
+                box-shadow: 10px 40px 50px #E5E9F6;
+                border-radius: 20px;
+                h2{
+                    font-size: 21px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    font-family: $mulish_font;
+                    color: black;
+                    padding: 20px;
+                }
+                img{
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+                p{
+                    line-height: 28px;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: $light-grey;
+                    font-family: $mulish_font;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 15px;
+                }
+                p.read{
+                    color: $btn_blue;
+                }
+            }
+        }
+    }
+}

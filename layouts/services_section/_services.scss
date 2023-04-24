@@ -1,0 +1,90 @@
+main {
+    .services_section{
+        margin-top: 192px;
+        position: relative;
+        z-index: 1;
+        .bg_img{
+            position: absolute;
+            z-index: -100;
+            top: 200px;
+        }
+        
+    }
+    .container {
+        @include flex(center);
+        flex-direction: column;
+        .heading{
+            @include flex(center);
+            flex-direction: column;
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 56px;
+                font-family: $mulish_font;
+            }
+            .border_div{
+                @include borderDiv;
+            }
+            p{
+                padding-top: 29px;
+                font-size: 18px;
+                color: $light-grey;
+                font-weight: 300;
+                line-height: 30px;
+                font-family: $mulish_font;
+                width: 952px;
+                text-align: center;
+            }
+        }
+        .flex_divs{
+            @include flex(space-between);
+            margin-top: 80px;
+            flex-wrap: wrap;
+            gap: 37px;
+            div{
+                max-width: 350px;
+                height: 354px;
+                border-radius: 20px;
+                box-shadow: 10px 40px 50px #E5E9F6;
+                position: relative;
+                background-color: white;
+                img{
+                    // padding-top: 54px;
+                    // padding-left: 37px;
+                    padding: 54px 45px 47px 37px;
+                }
+                h3{
+                    padding-left: 39px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-family: $mulish_font;
+                }
+                p{
+                    padding-left: 39px;
+                    padding-top: 10px;
+                    width: 261px;
+                    font-size: 16px;
+                    color: $light-grey;
+                    font-family: $mulish_font;
+                    font-weight: 300;
+                }
+            }
+        }
+        a{
+            
+            @include button($white-color);
+            text-decoration: none;
+            margin-top: 72px;
+            color: $btn_blue;
+            font-family: $mulish_font;
+            
+        }
+        .dots_bg {
+            position: absolute;
+            right: 50px;
+            top: 550px;
+            z-index: -10;
+        }
+    }
+    
+}

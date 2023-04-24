@@ -1,0 +1,47 @@
+header{
+    position: relative;
+    .main_div {
+        padding-top: 70px;
+        .left_div{
+            h1{
+                padding-bottom: 25px;
+            }
+            a{
+                margin-top: 45px;
+                text-decoration: none;
+                color: $white-color;
+                font-family: $mulish_font;
+                font-weight: 700;
+            }
+            p{
+                font-weight: 300;
+                font-size: 21px;
+            }
+        }
+    }
+    .img_bg{
+        position: absolute;
+        top: 160px;
+        left: 11px;
+    }
+    div.container {
+    
+        .left_div {
+            h1{
+                font-family: $mulish_font;
+                // width: 427px;
+            }
+            p{
+                font-size: 21px;
+                color: $light-grey;
+                font-family: $mulish_font;
+                font-weight: 300;
+                width: 445px;
+            }
+            a{
+                display: inline-block;
+                @include button($btn_blue);
+            }
+        }
+    }
+}

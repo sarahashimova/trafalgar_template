@@ -1,0 +1,25 @@
+.mobileapps_section {
+    .container {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        .content{
+            width: 486px;
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                font-family: $mulish_font;
+            }
+            .border_div {
+                @include borderDiv;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 30px;
+                color: $light-grey;
+                font-family: $mulish_font;
+                margin-top: 31px;}
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@mixin flex($direction){
+    display: flex;
+    align-items: center;
+    justify-content: $direction;
+}
+@mixin button($bg_color){
+    width: 200px;
+    height: 60px;
+    background-color: $bg_color;
+    border: 1px solid $btn_blue;
+    border-radius: 55px;
+    @include flex(center);
+}
+@mixin borderDiv{
+    background-color: $black-color;
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    margin-top: 29px;
+}
